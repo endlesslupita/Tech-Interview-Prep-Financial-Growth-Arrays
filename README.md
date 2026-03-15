@@ -43,7 +43,7 @@ You need to present test cases and demonstrate that you are passing those cases.
 You need to present Time and Space complexity of your solution. 
  If possible, refine your solution to improve its time and space efficiency. Explain the trade-offs and how the optimization improves the original solution.
 Maintain clear communication throughout the interview. Reiterate this point, as it's crucial and worth repeating.
-Submit a youtube link (public or unlisted)
+Submit a vimeo link (public or unlisted)
 Evaluation Criteria:
 
 Accuracy and efficiency of the algorithm.
