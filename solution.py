@@ -6,13 +6,14 @@ def square_growth_naive(growthPercentages):
         if abs(growthPercentages[0]) > abs(growthPercentages[-1]):
             popped_percent = growthPercentages.pop(0)
             squared_percent = popped_percent ** 2
-            squared_growth_stack.append(squared_percent) = 
+            squared_growth_stack.append(squared_percent)
         else:
             popped_percent = growthPercentages.pop()
             squared_percent = popped_percent ** 2
             squared_growth_stack.append(squared_percent)
 
-    squared_growth = squared_growth_stack.reverse()
+    squared_growth_stack.reverse()
+    squared_growth = squared_growth_stack
 
     return squared_growth
 
