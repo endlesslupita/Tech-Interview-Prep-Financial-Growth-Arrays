@@ -16,15 +16,21 @@ def square_growth_naive(growthPercentages):
     squared_growth = squared_growth_stack
 
     return squared_growth
+##################
+def square_growth(growthPercentages):
+    
+    list_length = len(growthPercentages)
+    squared_growth = [0] * list_length
+    fill = list_length - 1
+    while growthPercentages:
+        if abs(growthPercentages[0]) > abs(growthPercentages[-1])
+            squared_percentage = growthPercentages[0] ** 2
+        else:
+            squared_percentage = growthPercentage[-1] ** 2
+        squared_growth[fill] = squared_percentage
+        fill - 1
 
-# def square_growth(growthPercentages):
-#     squared_growth = []
-#     for percentage in growthPercentages:
-#         squared_percentage = percentage ** 2
-#         squared_growth.append(squared_percentage)
-
-#     squared_growth.sort()
-#     return squared_growth
+    return squared_growth
 
 if __name__ == '__main__':
     growthPercentages = [-3, -1, 4, 7]
