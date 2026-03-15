@@ -33,7 +33,7 @@ def square_growth(growthPercentages):
             squared_percentage = growthPercentages[right] ** 2
             squared_growth[fill] = squared_percentage
             right -= 1
-    fill -= 1
+        fill -= 1
     return squared_growth
 
 if __name__ == '__main__':
