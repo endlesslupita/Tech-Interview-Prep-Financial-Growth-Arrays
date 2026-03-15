@@ -28,4 +28,5 @@ def square_growth_naive(growthPercentages):
 
 if __name__ == '__main__':
     growthPercentages = [-3, -1, 4, 7]
-    print(square_growth(growthPercentages))
+    print(square_growth_naive(growthPercentages))
+    #print(square_growth(growthPercentages))
