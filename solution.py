@@ -21,14 +21,17 @@ def square_growth(growthPercentages):
     
     list_length = len(growthPercentages)
     squared_growth = [0] * list_length
-    fill = list_length - 1
-    while growthPercentages:
-        if abs(growthPercentages[0]) > abs(growthPercentages[-1])
-            squared_percentage = growthPercentages[0] ** 2
+    right = list_length - 1
+    left = 0
+    while right > left:
+        if abs(growthPercentages[left]) > abs(growthPercentages[right]):
+            squared_percentage = growthPercentages[left] ** 2
+            squared_growth[left] = squared_percentage
+            left -= 1
         else:
-            squared_percentage = growthPercentage[-1] ** 2
-        squared_growth[fill] = squared_percentage
-        fill - 1
+            squared_percentage = growthPercentages[right] ** 2
+            squared_growth[right] = squared_percentage
+            right -= 1
 
     return squared_growth
 
