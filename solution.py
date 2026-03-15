@@ -2,8 +2,8 @@ def square_growth_naive(growthPercentages):
     '''
     Square elements from array and populate new array with squares sorted from least to greatest
 
-    Time complexity: O(n)
-    Space complexity: O(1)
+    Time complexity: O(n^2)
+    Space complexity: O(n)
     '''
     squared_growth_stack = []
 
@@ -24,10 +24,10 @@ def square_growth_naive(growthPercentages):
 ##################
 def square_growth(growthPercentages):
     '''
-    Square elements from array and populate new array with squares sorted from least to greatest - optimized
+    Square elements from array and populate new array with squares sorted from least to greatest. Optimized from O(n^2) to O(n) by avoiding shifting caused by pop(0) and by avoiding a reverse.
 
-    Time complexity: O(1)
-    Space complexity: O(1)
+    Time complexity: O(n)
+    Space complexity: O(n)
     '''
 
     list_length = len(growthPercentages)
