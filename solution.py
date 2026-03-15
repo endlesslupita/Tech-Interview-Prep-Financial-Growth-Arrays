@@ -21,18 +21,19 @@ def square_growth(growthPercentages):
     
     list_length = len(growthPercentages)
     squared_growth = [0] * list_length
+    fill = list_length - 1
     right = list_length - 1
     left = 0
     while right > left:
         if abs(growthPercentages[left]) > abs(growthPercentages[right]):
             squared_percentage = growthPercentages[left] ** 2
-            squared_growth[left] = squared_percentage
+            squared_growth[fill] = squared_percentage
             left -= 1
         else:
             squared_percentage = growthPercentages[right] ** 2
-            squared_growth[right] = squared_percentage
+            squared_growth[fill] = squared_percentage
             right -= 1
-
+    fill -= 1
     return squared_growth
 
 if __name__ == '__main__':
