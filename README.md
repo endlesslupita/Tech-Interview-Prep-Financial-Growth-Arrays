@@ -51,3 +51,29 @@ Clarity in problem understanding and solution approach.
 Communication skills during explanation and coding.
 Code readability and use of appropriate data structures.
 Understanding of time and space complexity.
+
+----------------------------------------------
+Diagram of optimized approach
+
+Input:  [-3, -1,  4,  7]
+         L           R         fill=3
+
+Step 1: abs(-3)=3 < abs(7)=7  → square right (49)
+        [-3, -1,  4,  7]
+         L       R             fill=2
+Output: [ 0,  0,  0, 49]
+
+Step 2: abs(-3)=3 < abs(4)=4  → square right (16)
+        [-3, -1,  4,  7]
+         L   R                 fill=1
+Output: [ 0,  0, 16, 49]
+
+Step 3: abs(-3)=3 > abs(-1)=1 → square left (9)
+        [-3, -1,  4,  7]
+             LR                fill=0
+Output: [ 0,  9, 16, 49]
+
+Step 4: L == R → square right (1)
+        [-3, -1,  4,  7]
+             LR                fill=-1
+Output: [ 1,  9, 16, 49]
