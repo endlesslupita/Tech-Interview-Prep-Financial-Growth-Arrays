@@ -1,4 +1,5 @@
-from solution.py import square_growth_naive, square_growth
+from solution import square_growth_naive
+#, square_growth
 
 def test_normal_case_1():
         assert square_growth_naive([-2, -1, 4]) == [1, 4, 16]
@@ -14,7 +15,7 @@ def test_edge_case_1():
         assert square_growth_naive([-8, -4, -3]) == [9, 16, 64]
 
 def test_edge_case_2():
-empty list
+#empty list
         assert square_growth_naive([]) == []
 
 def test_edge_case_3():
