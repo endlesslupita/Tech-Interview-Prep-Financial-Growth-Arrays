@@ -1,5 +1,5 @@
 def square_growth_naive(growthPercentages):
-    squared_growth_array = []
+
     squared_growth_stack = []
 
     while growthPercentages:
