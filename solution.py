@@ -1,5 +1,10 @@
 def square_growth_naive(growthPercentages):
+    '''
+    Square elements from array and populate new array with squares sorted from least to greatest
 
+    Time complexity: O(n)
+    Space complexity: O(1)
+    '''
     squared_growth_stack = []
 
     while growthPercentages:
@@ -18,7 +23,13 @@ def square_growth_naive(growthPercentages):
     return squared_growth
 ##################
 def square_growth(growthPercentages):
-    
+    '''
+    Square elements from array and populate new array with squares sorted from least to greatest - optimized
+
+    Time complexity: O(1)
+    Space complexity: O(1)
+    '''
+
     list_length = len(growthPercentages)
     squared_growth = [0] * list_length
     fill = list_length - 1
@@ -39,4 +50,4 @@ def square_growth(growthPercentages):
 if __name__ == '__main__':
     growthPercentages = [-3, -1, 4, 7]
     print(square_growth_naive(growthPercentages))
-    #print(square_growth(growthPercentages))
+    print(square_growth(growthPercentages))
